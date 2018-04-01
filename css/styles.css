@@ -16,6 +16,8 @@ body {
     background-color: #fdfdfd;
     margin: 0;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 ul,
@@ -155,9 +157,15 @@ nav h1 a {
 /* ====================== Map ====================== */
 
 #map {
-    height: calc(100vh - 80px);
+    height: 50vh;
     width: 100%;
     background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+#map-container {
+    height: 50vh;
 }
 
 
@@ -222,7 +230,7 @@ nav h1 a {
     min-width: 100% !important;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
     color: #f18200;
     font-family: Arial, sans-serif;
     font-size: 14pt;
@@ -373,9 +381,6 @@ nav h1 a {
     body {
         height: 100vh;
     }
-    header {
-        height: 10%;
-    }
     .filter-options {
         display: flex;
         flex-direction: column;
@@ -452,6 +457,12 @@ nav h1 a {
 
     #footer {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .inside header {
+        width: 1200px;
     }
 }
 
