@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -20,16 +20,16 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map" role="application" aria-roledescription="Google Map"></div>
+      <div id="map" role="application" aria-label="Google Map with restaurants"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
         <div class="selector-box">
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="select neighbourhood" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" aria-label="select cuisine" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
         </div>

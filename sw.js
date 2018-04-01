@@ -1,8 +1,8 @@
-let cacheName = 'cache1';
+const cacheName = 'cache1';
 
 const filesToCache = [
    'css/styles.css',
-   'data/restaurant.json',
+   'data/restaurants.json',
    'img/1.jpg',
    'img/2.jpg',
    'img/3.jpg',
@@ -31,6 +31,9 @@ self.addEventListener('install', e => {
       caches.open(cacheName)
       .then( cache => {
          return cache.addAll(filesToCache);
+      })
+      .catch(error => {
+        console.log(error);
       })
    );
 });
